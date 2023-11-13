@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuario</title>
+  </head>
+  <body>
+    <form action="/register" method="GET">
+      <article>
+        <label>
+          Nombre y apellido:
+          <input type="text" name="nombre" required />
+        </label>
+      </article>
+      <article>
+        <label>
+          Nombre de usuario:
+          <input type="text" name="usuario" required />
+        </label>
+      </article>
+      <article>
+        <label>
+          Email:
+          <input type="email" name="email" required />
+        </label>
+      </article>
+      <article>
+        <label>
+          Fecha de nacimiento:
+          <input type="date" name="nacimiento" />
+        </label>
+      </article>
+      <article>
+        <label>
+          Domicilio:
+          <input type="text" name="domicilio" required />
+        </label>
+      </article>
+      <article>
+        <label>
+          Perfil de Usuario:
+          <input type="radio" name="perfilUsuario" value="Comprador" />
+          Comprador
+          <input type="radio" name="perfilUsuario" value="Vendedor" /> Vendedor
+        </label>
+      </article>
+      <article>
+        <label>
+          Categoría:
+          <br />
+          <input type="checkbox" name="categoria" value="Electro" /> Electro
+          <br />
+          <input type="checkbox" name="categoria" value="Moda" /> Moda
+          <br />
+          <input type="checkbox" name="categoria" value="Hogar" /> Hogar
+          <br />
+          <input type="checkbox" name="categoria" value="Jugueteria" />
+          Juguetería
+          <br />
+          <input type="checkbox" name="categoria" value="VidaSana" /> Vida Sana
+        </label>
+      </article>
+      <article>
+        <label>
+          Ingresa una foto de perfil
+          <input type="file" name="fotoUsuario" />
+        </label>
+      </article>
+      <article>
+        <label>
+          Ingresa una contraseña
+          <input type="password" name="contraseña" required />
+        </label>
+      </article>
+      <article>
+        <label>
+          Confirmar contraseña
+          <input type="password" name="contraseña" required />
+        </label>
+      </article>
+      <section>
+        <button type="reset">Borrar Formulario</button>
+        <button type="submit"><a href="/">Registrarme</a></button>
+      </section>
+    </form>
+  </body>
+</html>
